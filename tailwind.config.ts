@@ -7,11 +7,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      gpmxBlack: "#020B14",
+      gpmxBlue: "#1F73F9",
+      gpmxWhite: "#FFFFFF",
+      gpmxGray: "#BFC9D4",
+      gpmxBlueAccent: "#00A1E7",
+    },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-gpmx":
+          "linear-gradient(90deg, #0699DB 0%, #2D5E87 25%, #2E2A3F 50%, #341926 75%, #150C15 100%)",
+        "tablet-and-above": "url('/bg-feedback.svg')",
       },
     },
   },
